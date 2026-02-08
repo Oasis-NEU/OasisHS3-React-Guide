@@ -40,6 +40,7 @@ function App() {
             </h1>
           </div>
           <nav className="flex flex-wrap gap-2">
+            {/* NavLink props: "to" sets the path and className styles the link. */}
             {/* Map navItems to links; key keeps them stable. */}
             {navItems.map((item) => (
               <NavLink key={item.to} to={item.to} className={navLinkClass}>
@@ -51,7 +52,7 @@ function App() {
       </header>
 
       <main className="mx-auto w-full max-w-6xl px-6 py-10">
-        {/* Route table: each path renders a page component here. */}
+        {/* Route table: "path" is the URL, "element" is the component to render. */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/router" element={<RouterDemo />} />

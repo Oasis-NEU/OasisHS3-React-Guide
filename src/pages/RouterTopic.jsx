@@ -34,6 +34,7 @@ export default function RouterTopic() {
   return (
     <div className="space-y-6">
       {/* Use data from topicInfo to fill the header. */}
+      {/* SectionHeader props come from the topicInfo lookup. */}
       <SectionHeader
         eyebrow="Router"
         title={info.title}

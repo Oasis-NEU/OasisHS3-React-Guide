@@ -19,6 +19,7 @@ export default function HooksDemo() {
   const noteRef = useRef(null)
 
   // Effect starts the timer once and cleans it up on unmount.
+  // Empty dependency array means it runs after the first render only.
   useEffect(() => {
     const id = setInterval(() => {
       setSeconds((prev) => (prev + 1) % 60)

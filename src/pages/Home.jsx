@@ -98,6 +98,7 @@ export default function Home() {
         {/* Render feature cards from the array. */}
         {/* Same component, different props for each card. */}
         <div className="grid gap-6 md:grid-cols-2">
+          {/* Spread each feature object into FeatureCard props. */}
           {features.map((feature) => (
             <FeatureCard key={feature.title} {...feature} />
           ))}

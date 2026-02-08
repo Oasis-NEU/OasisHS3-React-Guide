@@ -1,6 +1,7 @@
 // File purpose: simple 404 page for unknown routes.
 import { Link } from 'react-router-dom'
 
+// No props here; this is a simple static page.
 export default function NotFound() {
   return (
     <div className="rounded-3xl border border-[#e3d2b3] bg-[#fff9ef] p-10 text-center">

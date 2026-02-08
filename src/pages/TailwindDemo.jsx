@@ -70,6 +70,7 @@ const active = variants.c
 export default function TailwindDemo() {
   return (
     <div className="space-y-8">
+      {/* SectionHeader props set the header text. */}
       <SectionHeader
         eyebrow="Tailwind"
         title="Style Variants"
@@ -80,6 +81,7 @@ export default function TailwindDemo() {
         {/* Flex layout: stack on small screens, row on medium screens. */}
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="space-y-3">
+            {/* className receives styles from the active variant. */}
             <p className={active.eyebrowClass}>Hero Variant</p>
             <h3 className={active.headlineClass}>OASIS Design Modes</h3>
             <p className={active.bodyClass}>

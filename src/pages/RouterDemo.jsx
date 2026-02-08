@@ -41,6 +41,7 @@ export default function RouterDemo() {
         {/* Map topic data into link cards. */}
         {/* Build each URL using the slug field. */}
         {/* Key uses the slug so React can track each card. */}
+        {/* Link's "to" prop sets the destination path. */}
         {topics.map((topic) => (
           <Link
             key={topic.slug}

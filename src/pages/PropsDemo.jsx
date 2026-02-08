@@ -56,6 +56,7 @@ const features = featuresA
 export default function PropsDemo() {
   return (
     <div className="space-y-8">
+      {/* SectionHeader props set the heading text. */}
       <SectionHeader
         eyebrow="Props"
         title="Same Component, New Data"
